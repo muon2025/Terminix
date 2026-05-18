@@ -79,7 +79,27 @@ Clears the custom terminal window.
 
 Gracefully exits the shell.
 
-## 5. ncurses Interface
+## 5. Pipe Command
+
+Pass the output of one command directly as the input to another command.
+
+Example:
+- ls | grep .c
+
+The shell:
+- Creates a pipe for the inter-process communication
+- Forks two child processes
+- Re-directs the first command's 'STDOUT_FILENO' to the pipe
+- Re-directs the second command's 'STDIN_FILENO' to the pipe
+- Executes the commands simultaneously
+
+Implemented using:
+- pipe()
+- fork()
+- dup2()
+- execvp()
+
+## 6. ncurses Interface
 
 The shell runs inside a full-screen terminal interface built using ncurses.
 
@@ -122,7 +142,6 @@ This project explores:
 # Current Limitations
 
 Currently unsupported:
-- Single pipe
 - Multiple pipes
 - Command history
 - Auto-complete
