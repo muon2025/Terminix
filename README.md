@@ -117,16 +117,16 @@ Features:
 
 # Compilation
 
-The repository currently contains multiple development-stage source files representing different features/phases of the terminal project.
+The repository now contains a fully integrated version of the custom terminal that combines:
+- Standard command execution
+- Input re-direction ('<')
+- Output re-direction ('>')
+- Pipe support ('|')
+- Build-in commands
 
-At the moment:
-- The files are not yet merged into a single final build
-- There is no unified compilation command yet
-- Each file demonstrates a separate concept independently
-
-As a result, the project currently cannot be compiled into a complete working terminal using a single command.
-
-A fully integrated release version with proper build instructions will be added in the future updates.
+The final combined version can now be compiled normally using:
+- gcc Five.c
+- ./a.out
 
 # Concepts Learned
 
@@ -147,3 +147,4 @@ Currently unsupported:
 - Auto-complete
 - Background processes
 - Signal handling
+- Custom ncurses interface
