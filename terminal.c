@@ -43,7 +43,7 @@ void redrawScreen() {
     refresh();
 }
 
-int main(int argumentCount, char *argumentVector[])
+int main()
 {
     initscr();
 
