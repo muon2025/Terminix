@@ -166,4 +166,3 @@ Currently unsupported:
 - Auto-complete
 - Background processes
 - Signal handling
-- Custom ncurses interface
