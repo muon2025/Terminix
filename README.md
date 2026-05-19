@@ -118,11 +118,11 @@ Features:
 # Compilation
 
 This repository contains multiple development phases of the custom shell project:
-- One.c
-- Two.c
-- Three.c
-- Four.c
-- Five.c
+- 01basicshell.c
+- 02outputredirection.c
+- 03inputredirection.c
+- 04pipesupport.c
+- 05integratedshell.c
 
 Each file represents a specific stage in the shell's development:
 - Standard command execution
@@ -144,7 +144,7 @@ The project uses a Makefile for compilation. To compile the final shell, run the
 
 Notes:
 - The Makefile automatically handles linking against required libraries such as ncurses.
-- Earlier phases (One.c, Two.c, Three.c, Four.c and Five.c) are not intended to be compiled together.
+- Earlier phases (located in the 'phases' folder) are not intended to be compiled together.
 - Only terminal.c represents the final integrated version of the shell.
 
 # Concepts Learned
