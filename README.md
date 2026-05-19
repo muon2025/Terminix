@@ -117,16 +117,35 @@ Features:
 
 # Compilation
 
-The repository now contains a fully integrated version of the custom terminal that combines:
+This repository contains multiple development phases of the custom shell project:
+- One.c
+- Two.c
+- Three.c
+- Four.c
+- Five.c
+
+Each file represents a specific stage in the shell's development:
 - Standard command execution
 - Input re-direction ('<')
 - Output re-direction ('>')
 - Pipe support ('|')
 - Build-in commands
 
-The final combined version can now be compiled normally using:
-- gcc Five.c
-- ./a.out
+These files are preserved separately for learning/reference purposes.
+
+# Final Integrated Build
+
+The fully combined and working implementation is contained in:
+- terminal.c
+
+The project uses a Makefile for compilation. To compile the final shell, run the following commands:
+- make
+- ./terminix
+
+Notes:
+- The Makefile automatically handles linking against required libraries such as ncurses.
+- Earlier phases (One.c, Two.c, Three.c, Four.c and Five.c) are not intended to be compiled together.
+- Only terminal.c represents the final integrated version of the shell.
 
 # Concepts Learned
 
